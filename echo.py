@@ -1,14 +1,14 @@
 import logging
-import os
-from dotenv import load_dotenv
-TOKEN = os.getenv("DISCORD_TOKEN")
 from aiogram import Bot, Dispatcher, executor, types
-from settings import API_TOKEN, CLASSESS
+from settings import CLASSESS
 import re
 import pickle 
 from catboost import CatBoostClassifier
 from aiogram import types
 from aiogram.types import CallbackQuery
+import os
+from dotenv import load_dotenv
+TOKEN = os.getenv("API_TOKEN")
 
 # from sklearn.feature_extraction.text import TfidfVectorizer
 
