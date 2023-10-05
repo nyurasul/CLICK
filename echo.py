@@ -1,4 +1,7 @@
 import logging
+import os
+from dotenv import load_dotenv
+TOKEN = os.getenv("DISCORD_TOKEN")
 from aiogram import Bot, Dispatcher, executor, types
 from settings import API_TOKEN, CLASSESS
 import re
@@ -12,6 +15,7 @@ from aiogram.types import CallbackQuery
 # import numpy as np
 # import os
 
+load_dotenv()
 REPLACE_BY_SPACE_RE = re.compile('[/(){}\[\]\|@,;]')
 BAD_SYMBOLS_RE = re.compile('[^0-9a-zа-яё #+_]')
 
