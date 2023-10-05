@@ -19,3 +19,4 @@ typing_extensions==4.7.1
 yarl==1.9.2
 catboost
 scikit-learn
+python-dotenv
